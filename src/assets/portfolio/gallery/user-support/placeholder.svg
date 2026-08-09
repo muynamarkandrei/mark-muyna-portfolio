@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fff7ed"/>
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="#ffffff"/>
+  <circle cx="410" cy="310" r="120" fill="#fdba74"/>
+  <rect x="560" y="190" width="360" height="24" rx="12" fill="#fb923c"/>
+  <rect x="560" y="236" width="280" height="20" rx="10" fill="#fed7aa"/>
+  <rect x="170" y="470" width="860" height="150" rx="24" fill="#ffedd5"/>
+  <text x="600" y="528" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#c2410c">User support placeholder</text>
+  <text x="600" y="574" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#9a2c00">Drop your support and teamwork photos here.</text>
+</svg>

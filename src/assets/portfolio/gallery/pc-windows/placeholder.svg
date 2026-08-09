@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f3f4f6"/>
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="#ffffff"/>
+  <rect x="140" y="160" width="320" height="220" rx="24" fill="#dbeafe"/>
+  <rect x="500" y="160" width="560" height="24" rx="12" fill="#93c5fd"/>
+  <rect x="500" y="208" width="420" height="20" rx="10" fill="#bfdbfe"/>
+  <rect x="500" y="252" width="480" height="20" rx="10" fill="#bfdbfe"/>
+  <rect x="140" y="430" width="920" height="180" rx="24" fill="#eff6ff"/>
+  <text x="600" y="510" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#1d4ed8">PC &amp; Windows placeholder</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#64748b">Replace with a real image once you upload it.</text>
+</svg>

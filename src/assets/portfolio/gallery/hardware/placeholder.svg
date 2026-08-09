@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="#ffffff"/>
+  <rect x="180" y="180" width="280" height="220" rx="24" fill="#ede9fe"/>
+  <rect x="520" y="190" width="460" height="24" rx="12" fill="#a78bfa"/>
+  <rect x="520" y="236" width="360" height="20" rx="10" fill="#ddd6fe"/>
+  <rect x="170" y="450" width="860" height="170" rx="24" fill="#f5f3ff"/>
+  <text x="600" y="518" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#6d28d9">Hardware placeholder</text>
+  <text x="600" y="568" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#64748b">Swap in your hardware photos later.</text>
+</svg>

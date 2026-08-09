@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Dark background -->
+  <rect width="1200" height="800" fill="#0a0e27"/>
+  
+  <!-- Left panel - Navigation -->
+  <rect width="250" height="800" fill="#1a1f3a"/>
+  <rect x="0" y="0" width="250" height="80" fill="#0d6efd"/>
+  <text x="125" y="45" text-anchor="middle" font-family="Segoe UI, Arial" font-size="24" fill="white" font-weight="bold">Admin</text>
+  
+  <!-- Nav items -->
+  <text x="30" y="140" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Dashboard</text>
+  <text x="30" y="180" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Products</text>
+  <text x="30" y="220" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Orders</text>
+  <text x="30" y="260" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Users</text>
+  <text x="30" y="300" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Settings</text>
+  
+  <!-- Main content area -->
+  <rect x="250" y="0" width="950" height="800" fill="#111827"/>
+  
+  <!-- Top bar -->
+  <rect x="250" y="0" width="950" height="60" fill="#1f2937"/>
+  <text x="280" y="38" font-family="Segoe UI, Arial" font-size="20" fill="white" font-weight="bold">Dashboard</text>
+  
+  <!-- Content cards -->
+  <rect x="280" y="100" width="280" height="140" rx="8" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+  <text x="420" y="130" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Total Products</text>
+  <text x="420" y="170" text-anchor="middle" font-family="Segoe UI, Arial" font-size="32" fill="#0d6efd" font-weight="bold">248</text>
+  
+  <rect x="610" y="100" width="280" height="140" rx="8" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+  <text x="750" y="130" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Pending Orders</text>
+  <text x="750" y="170" text-anchor="middle" font-family="Segoe UI, Arial" font-size="32" fill="#10b981" font-weight="bold">12</text>
+  
+  <rect x="940" y="100" width="280" height="140" rx="8" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+  <text x="1080" y="130" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#a0a9d6">Total Revenue</text>
+  <text x="1080" y="170" text-anchor="middle" font-family="Segoe UI, Arial" font-size="32" fill="#f59e0b" font-weight="bold">$45K</text>
+  
+  <!-- Data table -->
+  <rect x="280" y="280" width="940" height="480" rx="8" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+  <text x="300" y="320" font-family="Segoe UI, Arial" font-size="16" fill="white" font-weight="bold">Recent Orders</text>
+  
+  <!-- Table headers -->
+  <line x1="300" y1="340" x2="1200" y2="340" stroke="#374151" stroke-width="1"/>
+  <text x="310" y="365" font-family="Segoe UI, Arial" font-size="12" fill="#a0a9d6">Order ID</text>
+  <text x="520" y="365" font-family="Segoe UI, Arial" font-size="12" fill="#a0a9d6">Customer</text>
+  <text x="750" y="365" font-family="Segoe UI, Arial" font-size="12" fill="#a0a9d6">Status</text>
+  <text x="950" y="365" font-family="Segoe UI, Arial" font-size="12" fill="#a0a9d6">Amount</text>
+  
+  <!-- Sample rows -->
+  <line x1="300" y1="390" x2="1200" y2="390" stroke="#374151" stroke-width="0.5"/>
+  <text x="310" y="410" font-family="Segoe UI, Arial" font-size="12" fill="white">#ORD-001</text>
+  <text x="520" y="410" font-family="Segoe UI, Arial" font-size="12" fill="white">John Doe</text>
+  <rect x="750" y="395" width="70" height="24" rx="4" fill="#10b981" opacity="0.2"/>
+  <text x="785" y="412" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#10b981">Shipped</text>
+  <text x="950" y="410" font-family="Segoe UI, Arial" font-size="12" fill="white">$299.99</text>
+  
+  <line x1="300" y1="435" x2="1200" y2="435" stroke="#374151" stroke-width="0.5"/>
+  <text x="310" y="455" font-family="Segoe UI, Arial" font-size="12" fill="white">#ORD-002</text>
+  <text x="520" y="455" font-family="Segoe UI, Arial" font-size="12" fill="white">Jane Smith</text>
+  <rect x="750" y="440" width="70" height="24" rx="4" fill="#0d6efd" opacity="0.2"/>
+  <text x="785" y="457" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#0d6efd">Processing</text>
+  <text x="950" y="455" font-family="Segoe UI, Arial" font-size="12" fill="white">$149.99</text>
+  
+  <text x="420" y="700" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#a0a9d6">Administrative Dashboard - Product & Order Management</text>
+</svg>

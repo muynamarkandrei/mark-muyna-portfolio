@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  <rect x="110" y="120" width="980" height="560" rx="32" fill="#ffffff"/>
+  <rect x="180" y="210" width="380" height="220" rx="24" fill="#dbeafe"/>
+  <rect x="620" y="220" width="300" height="24" rx="12" fill="#60a5fa"/>
+  <rect x="620" y="265" width="240" height="18" rx="9" fill="#bfdbfe"/>
+  <rect x="620" y="300" width="280" height="18" rx="9" fill="#bfdbfe"/>
+  <rect x="180" y="480" width="740" height="120" rx="24" fill="#eff6ff"/>
+  <text x="600" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#1d4ed8">Capstone AI assistant placeholder</text>
+  <text x="600" y="574" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#64748b">Replace this with your final capstone screenshot.</text>
+</svg>

@@ -118,7 +118,15 @@ export function Hero() {
 
         <Reveal delay={160} className="min-w-0">
           <div className="card-surface p-3">
-            <Placeholder label="PROFESSIONAL HEADSHOT" className="aspect-4/5" />
+            {profile.profileImage ? (
+              <img
+                src={profile.profileImage}
+                alt="Professional headshot"
+                className="h-auto w-full rounded-lg object-cover aspect-4/5"
+              />
+            ) : (
+              <Placeholder label="PROFESSIONAL HEADSHOT" className="aspect-4/5" />
+            )}
             <dl className="mt-3 grid grid-cols-3 divide-x divide-border rounded-lg bg-surface py-3 text-center">
               <div className="px-2">
                 <dt className="font-mono text-[10px] tracking-wide text-muted-foreground uppercase">
