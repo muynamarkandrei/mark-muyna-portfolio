@@ -1,6 +1,5 @@
 import { Github } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { Placeholder } from "./Sections";
 import { capstoneImages, ciscoLabs } from "@/lib/portfolio-data";
 
 const contributions = [
