@@ -1,6 +1,5 @@
 import { Github } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { Placeholder } from "./Sections";
 import { capstoneImages, ciscoLabs } from "@/lib/portfolio-data";
 
 const contributions = [
@@ -9,7 +8,7 @@ const contributions = [
   "Validated system functionality through testing and feature reviews while maintaining the research manuscript, ensuring the platform incorporated essential e-commerce capabilities, AI-assisted recommendations, automated reporting, and administrative tools that addressed identified business needs.",
 ];
 
-const stack = ["React", "JavaScript", "HTML", "CSS", "Three.js", "Figma", "AI-assisted workflows"];
+const stack = ["HTML", "CSS", "JavaScript", "Figma", "AI-assisted workflows"];
 
 export function Projects() {
   return (
@@ -74,12 +73,6 @@ export function Projects() {
                   </figcaption>
                 </figure>
               ))}
-              <div className="grid gap-4 sm:grid-cols-2">
-                <Placeholder label="CAPSTONE UI/UX" className="aspect-16/10" />
-                <Placeholder label="CAPSTONE 3D VISUALIZATION" className="aspect-16/10" />
-                <Placeholder label="CAPSTONE AI ASSISTANT" className="aspect-16/10" />
-                <Placeholder label="CAPSTONE PRODUCT / ADMIN FEATURES" className="aspect-16/10" />
-              </div>
             </div>
           </div>
         </article>
@@ -98,7 +91,13 @@ export function Projects() {
         {ciscoLabs.map((lab, i) => (
           <Reveal key={lab.name} delay={i * 80}>
             <article className="card-surface flex h-full flex-col p-6 transition-shadow hover:shadow-lg">
-              <Placeholder label={`CISCO LAB 0${i + 1} TOPOLOGY`} className="aspect-16/9" />
+              <img
+                src={lab.image}
+                alt={`Packet Tracer topology for ${lab.name}`}
+                loading="lazy"
+                className="w-full rounded-lg border border-border bg-surface object-contain"
+              />
+
               <h4 className="mt-5 text-lg font-semibold">{lab.name}</h4>
               <dl className="mt-4 space-y-3 text-sm">
                 {[

@@ -19,11 +19,8 @@ import ojtTeam from "@/assets/portfolio/gallery/user-support/rfid-setup.jpg";
 import certificateHandover from "@/assets/portfolio/gallery/user-support/accomplishment.jpg";
 
 // Networking lab screenshots
-import dhcpConfig from "@/assets/portfolio/gallery/networking/dhcp_config.png";
 import physicalTopology from "@/assets/portfolio/gallery/networking/physical_topology.png";
 import wirelessTopology from "@/assets/portfolio/gallery/networking/topology.png";
-import routerInterfaces from "@/assets/portfolio/gallery/networking/router_interfaces.png";
-import pingTest from "@/assets/portfolio/gallery/networking/ping_test.png";
 
 // Capstone images
 import capstoneChat from "@/assets/portfolio/capstone/ai-chatbot.png";
@@ -37,14 +34,18 @@ export const PLACEHOLDER = "[TO BE PROVIDED]";
 
 export const profile = {
   name: "Mark Andrei B. Muyna",
-  title: "Early-Career IT Professional",
+  title: "Aspiring IT Support & Infrastructure Professional",
   focus: "IT Support • Troubleshooting • Networking",
   email: "markandreimuyna31@gmail.com",
+  phone: "0999 813 6163",
+  location: "Santa Maria, Bulacan, Philippines",
   github: "https://github.com/muynamarkandrei",
-  linkedin: "",
-  resumeFile: "",
+  linkedin: "https://www.linkedin.com/in/mark-andrei-muyna-4a7381297/",
+  labRepo: "https://github.com/muynamarkandrei/cisco-packet-tracer-home-lab",
+  resumeFile: "/resume/Mark-Andrei-Muyna-Resume.pdf",
   profileImage: professionalHeadshot,
 };
+
 
 export const galleryCategories = [
   "PC & Windows",
@@ -161,57 +162,56 @@ export const capstoneImages = [
   },
   {
     src: capstone3d,
-    alt: "3D capstone project visualization or component",
-    caption: "3D model or interactive component in the capstone project.",
+    alt: "Capstone PC build configurator with a 3D component viewer and compatibility checks",
+    caption: "PC build configurator with 3D component visualization and part selection.",
   },
+
 ];
 
 export const skillGroups = [
   {
     title: "IT Support & Troubleshooting",
     items: [
-      "Windows setup and configuration",
-      "PC troubleshooting",
-      "Hardware troubleshooting",
-      "Software / application installation",
-      "Printer setup and troubleshooting",
-      "User support",
-      "Basic technical documentation",
+      "Windows 10 / 11 installation and configuration",
+      "Windows deployment for new units (OOBE setup, account naming, activation)",
+      "PC and hardware troubleshooting",
+      "Peripheral installation (monitors, keyboards, mice, scanners)",
+      "Software and application installation",
+      "Printer and scanner setup and troubleshooting",
+      "End-user technical support and walkthroughs",
+      "Basic technical documentation and logbooks",
     ],
   },
   {
     title: "Networking",
     items: [
-      "Basic LAN setup",
-      "RJ45 / LAN cable preparation",
-      "LAN connectivity testing",
-      "IP address identification",
-      "Basic IP configuration",
-      "Ping and connectivity testing",
-      "Basic router and switch concepts",
+      "TCP/IP and IPv4 fundamentals",
+      "LAN troubleshooting",
+      "RJ45 cable termination and testing",
+      "Network printer configuration (TCP/IP ports)",
+      "Basic router configuration",
+      "Ping / ipconfig connectivity verification",
       "Cisco Packet Tracer",
     ],
   },
   {
     title: "Software & Applications",
     items: [
-      "Microsoft Office",
-      "Outlook (including PST import / export)",
+      "Microsoft Office Suite",
+      "Microsoft Outlook (configuration and mailbox migration)",
       "SAP (client setup)",
       "AnyDesk",
       "IP Messenger",
-      "Web browsers",
+      "Adobe Acrobat Pro",
       "Figma",
     ],
   },
   {
-    title: "Web Development",
+    title: "Programming & Web Development",
     items: [
       "HTML",
       "CSS",
       "JavaScript",
-      "React",
-      "Three.js",
       "Basic web development concepts",
       "AI-assisted development workflows",
     ],
@@ -220,116 +220,165 @@ export const skillGroups = [
 
 export const ojtAreas = [
   {
-    title: "Computer & Windows Support",
+    title: "Windows Deployment & PC Setup",
     points: [
-      "Factory reset and operating system setup",
-      "Windows configuration for deployed units",
-      "Microsoft Office installation",
-      "Software and application setup",
-      "Hardware troubleshooting",
-      "General computer maintenance",
+      "Completed Windows setup on new laptops and desktops, including bypassing the online account requirement with oobe\\bypassnro",
+      "Renamed accounts to the company standard (<Department>-<First Initial><Surname>) and created a separate Admin IT account",
+      "Removed preinstalled antivirus and conflicting Microsoft products before installing licensed Microsoft Office and applying the product key",
+      "Installed the standard application set: SAP, Microsoft Office, company security software, AnyDesk, WinRAR, IP Messenger, browser",
+      "Verified unit specifications against the inventory records",
+      "Set up mini PCs and reused units for reassignment to new users",
     ],
   },
   {
-    title: "Printer Support",
+    title: "Printer & Scanner Support",
     points: [
-      "Printer installation and configuration",
-      "TCP/IP printer configuration",
-      "Printer troubleshooting",
-      "Printing and scanning assistance",
-      "Instructing users on printer operation",
-      "Explaining printer issues and the fix applied",
+      "Installed network printers by adding a TCP/IP port using the printer's own IP address, then printing a test page",
+      "Connected multiple printers to a single workstation and renamed them for easy identification",
+      "Set up wireless printers and scanners for the HR department, including driver-only selective installs",
+      "Configured scanner shortcuts in Capture v5 Pro (300 DPI, simplex default, custom output path and file type)",
+      "Reset Epson waste ink pad counters with the adjustment program, then ran power cleaning and test prints",
+      "Diagnosed slow or unreachable printers with ping checks, restarts, and print quality tests",
     ],
   },
   {
-    title: "Networking",
+    title: "Networking & Cabling",
     points: [
-      "Creating and testing LAN cables",
-      "RJ45 cable preparation",
-      "LAN connectivity testing",
-      "Identifying computer IP addresses",
-      "Command-line connectivity tests (ping, ipconfig)",
-      "Wireless connectivity troubleshooting",
-      "Basic router reset and configuration tasks",
+      "Cut, terminated, and crimped RJ45 LAN cables (10 m and 20 m runs) following the standard wire order",
+      "Tested finished cables with a network tester and peer-to-peer connections, re-terminating ends when a link failed",
+      "Reorganized hub wiring, removed dead cables, and rerouted runs away from chair wheels",
+      "Connected printers and telephones to the network over LAN cabling and confirmed the link",
+      "Assisted with a department Wi-Fi reset, coordinating with the network admin and reconnecting every affected device",
+      "Restored a blocked user's Wi-Fi access through the company's web-based network management tool",
     ],
   },
   {
-    title: "Application & System Support",
+    title: "Application & User Support",
     points: [
-      "SAP client setup",
-      "Outlook PST import and export",
-      "AnyDesk for remote assistance",
-      "IP Messenger",
-      "Microsoft Office",
-      "Browser and general software installation",
+      "Configured Microsoft Outlook and resolved send/receive failures",
+      "Installed Adobe Acrobat Pro with serial activation for an affiliate office",
+      "Set up IP Messenger with the correct user name and department",
+      "Installed a payroll application and checked a KIOSK system unit",
+      "Set up and troubleshot RFID book-security scanners for the library, adjusting range and alert settings",
+      "Walked employees through printing and scanning so they could repeat the steps on their own",
     ],
   },
 ];
 
 export const caseStudies = [
   {
-    category: "Printer Issue",
-    title: "Network printer stopped responding for a department",
-    problem: "A network-connected printer in the Finance department became unresponsive, preventing the team from printing critical documents and disrupting business operations.",
-    investigation: "Checked the printer's physical connection, power status, and network connectivity. Verified the printer's IP address and attempted to ping it from a workstation. Reviewed printer queue and print spooler status on the connected computers.",
-    cause: "The printer's network interface was disconnected due to a loose Ethernet cable at the back of the device. The network cable had shifted from its secure position.",
-    solution: "Reseated the RJ45 Ethernet cable firmly into the printer's network port and verified the connection indicator lights turned on. Cleared the print queue and restarted the print spooler service on affected workstations. Confirmed connectivity by sending a test print job.",
-    result: "The printer regained full network connectivity and users were able to resume normal printing operations within 15 minutes. All queued print jobs were successfully processed.",
-    learned: "Physical connectivity issues are often the root cause of network device problems. Always verify cable connections before investigating software-related issues. The importance of proper cable management and periodic visual inspection of network connections.",
+    category: "Software / Email",
+    title: "Outlook stopped sending and receiving mail for a user",
+    problem:
+      "An employee reported that documents were not sending from Outlook, and that no new email had arrived for a long time.",
+    investigation:
+      "Reported the issue to my supervisor, then checked the account from the web mail interface first to see whether the problem was the mailbox or the client. Web mail worked normally, so I moved to the user's device and reviewed the Outlook account settings.",
+    cause: "The saved account password had been removed from the Outlook profile, so the client could not authenticate.",
+    solution:
+      "Re-entered the account password on the user's device, then restarted Outlook (ending the task in Task Manager where it did not close cleanly).",
+    result: "Sending and receiving worked again on the user's own device.",
+    learned:
+      "Checking web mail first separates a mailbox problem from a client problem and saves time before touching the user's machine.",
   },
   {
-    category: "Network Connectivity",
-    title: "Workstation with no LAN connectivity",
-    problem: "A user's desktop workstation could not connect to the company network, preventing access to shared resources, email, and internet connectivity.",
-    investigation: "Checked the physical Ethernet connection at the workstation and network switch. Verified that the network card was detected in Device Manager. Ran ipconfig to check if the workstation had obtained an IP address. Tested connectivity using ping commands to the gateway and DHCP server.",
-    cause: "The workstation had not received an IP address from the DHCP server. Upon further investigation, the network card driver was outdated and not properly communicating with the switch.",
-    solution: "Updated the network adapter driver from the manufacturer's website. Renewed the DHCP lease by running 'ipconfig /release' and 'ipconfig /renew'. Verified the workstation received a valid IP address in the 192.168.x.x range matching the network subnet.",
-    result: "The workstation successfully reconnected to the network and regained access to all shared resources and internet connectivity. The user was able to resume work immediately.",
-    learned: "Network driver updates are critical for maintaining stable connectivity. DHCP troubleshooting requires both hardware verification and software configuration checks. The importance of understanding TCP/IP fundamentals for effective troubleshooting.",
+    category: "Hardware",
+    title: "Desktop unit powered on with a repeating beep and no display",
+    problem: "A reported system unit would not display anything, and on power-up it produced a continuous alternating beep.",
+    investigation:
+      "Opened the case, reconnected the power cable and peripherals before powering on so the system could detect them, then listened to the beep pattern on start-up.",
+    cause: "The RAM was not seated properly in its slot, which the beep pattern signalled.",
+    solution:
+      "Interrupted power immediately, removed the RAM module and reseated it until it clicked, then powered on again — repeating the reseat until the beeping stopped.",
+    result: "The unit posted and displayed normally, and I kept observing it afterwards to confirm it did not shut down again.",
+    learned:
+      "Beep codes are a real diagnostic signal, and cutting power immediately protects the hardware while you check the module.",
   },
   {
-    category: "Windows / PC Setup",
-    title: "Unit prepared for redeployment after a factory reset",
-    problem: "A laptop needed to be wiped and prepared for redeployment to a new user after being replaced in its previous role.",
-    investigation: "Assessed the current state of the device, including existing Windows installation, applications, and user data. Identified all required business applications and drivers needed for the new user.",
-    cause: "The device required a fresh Windows installation and software configuration to ensure a clean environment free of previous user data and unnecessary applications.",
-    solution: "Performed a factory reset using Windows' built-in reset feature. Installed Windows 10 from installation media and applied all latest Windows updates. Installed required business software: Microsoft Office, SAP client, AnyDesk, IP Messenger, and printer drivers. Configured network settings and verified connectivity. Created a new user account with appropriate permissions.",
-    result: "The laptop was fully prepared and ready for deployment to the new user with all required software installed and tested. The device passed all connectivity and functionality checks.",
-    learned: "The importance of standardized deployment procedures for maintaining consistent device configurations. Windows installation and driver installation order affects overall system stability. Proper user account configuration and permissions management are essential for security and productivity.",
+    category: "Printer / Wireless",
+    title: "Wireless printer unreachable from a workstation",
+    problem: "An employee could not print to a wireless printer that was otherwise working for other users.",
+    investigation:
+      "Confirmed the printer was online and serving other users, then checked the network state of the reporting workstation itself.",
+    cause: "Airplane mode was switched on on the workstation, so it could not reach the printer over the network.",
+    solution: "Turned airplane mode off, confirmed the wireless connection, and sent a test print.",
+    result: "The employee could print wirelessly again.",
+    learned:
+      "When one user is affected and everyone else is fine, the fault is almost always on that endpoint — check the client before the shared device.",
   },
   {
-    category: "Software / Application Issue",
-    title: "Mailbox data migration between units",
-    problem: "A user's Outlook mailbox data needed to be transferred from an old laptop to a new workstation to ensure continuity of email and calendar access.",
-    investigation: "Located the user's Outlook PST file on the old laptop. Checked the mailbox size and identified all Outlook folders that needed to be migrated. Verified the new workstation had Outlook installed and configured.",
-    cause: "Standard mailbox migration requirement when transitioning users to new equipment. PST export/import is the standard method for preserving email history.",
-    solution: "Exported the mailbox from the old laptop to a PST file using Outlook's export function. Transferred the PST file to the new workstation via USB or network share. Imported the PST file into Outlook on the new workstation. Verified all emails, contacts, and calendar items were successfully transferred.",
-    result: "The user's mailbox was successfully migrated with all historical data preserved. The user could immediately access all previous emails and calendar items on the new workstation.",
-    learned: "Outlook PST management is critical for user continuity during equipment transitions. PST file sizes can become quite large, requiring careful planning for transfer. The importance of backing up email data and understanding mailbox migration procedures for smooth user transitions.",
+    category: "Networking",
+    title: "Wi-Fi access denied for an employee's device",
+    problem: "An employee's device was refused a connection to the company wireless network.",
+    investigation:
+      "Checked the account and device against the company's web-based network management framework, where connected and denied users are listed.",
+    cause: "The user had been flagged with a blocked status in the network management tool.",
+    solution: "Removed the blocked status for that user so the denied-access flag was cleared, then had them reconnect.",
+    result: "The device connected to the wireless network again.",
+    learned:
+      "Not every connectivity issue is physical — access control on the network side can look exactly like a broken connection to the user.",
+  },
+  {
+    category: "Printer Maintenance",
+    title: "Epson printer stopped printing with a full waste ink pad counter",
+    problem: "A printer refused to print and reported a maintenance condition rather than a paper or connectivity error.",
+    investigation:
+      "Opened the Epson adjustment program, selected the printer model and port, and used the check function to read the waste ink pad counter values.",
+    cause: "The waste ink pad counter had reached 100%, which locks the printer until it is reset.",
+    solution:
+      "Initialised the counter, finished the routine, powered the printer off and on again, then ran a power cleaning cycle and a test print — repeating the cleaning where quality was still poor, up to the limit before escalating to technical repair.",
+    result: "The printer resumed printing at acceptable quality without being sent out for repair.",
+    learned:
+      "Some printer faults are counters and maintenance states, not failures — and there is a point where escalation is the right call.",
+  },
+  {
+    category: "Software Installation",
+    title: "Application installer blocked by the system on a user's PC",
+    problem:
+      "An employee needed an application installed, but the installation was blocked on their machine and would not complete.",
+    investigation:
+      "Worked through the installation steps and confirmed the block was coming from the system rather than the installer files, and that a password-protected step was involved.",
+    cause: "The system prevented the installation from completing, and I could not resolve the block during that visit.",
+    solution:
+      "Set the employee up with an alternative application so they could keep working, and installed the password-protected software they separately needed while the original issue stayed open for follow-up.",
+    result:
+      "The employee was not left blocked, and the unresolved installation was reported rather than quietly dropped.",
+    learned:
+      "Keeping the user productive matters even when the root cause is still open, and it is better to say a fix is pending than to overstate it.",
   },
 ];
 
 export const ciscoLabs = [
   {
-    name: "Cisco Packet Tracer Home Lab 01 - LAN Network Design",
-    objective: "Design and configure a functional LAN network with multiple device types including routers, switches, PCs, laptops, and printers to demonstrate understanding of network architecture and device communication.",
-    topology: "Star topology with a central router (Router1) connected to a Layer 2 switch (Switch0). The switch connects to multiple end devices: PC0, Laptop0, and Printer0, enabling inter-device communication.",
-    devices: "1 Cisco 2911 Router, 1 Catalyst 2960 Switch, 2 PC Devices, 1 Laptop, 1 Network Printer",
-    configuration: "Configured Router1 with IP address 192.168.1.1/24 and DHCP pool for the 192.168.1.0/24 network. Set up DHCP server on the router to automatically assign IP addresses to connected devices. Configured all end devices to obtain IP addresses via DHCP. Verified connectivity between all devices.",
-    testing: "Performed ping tests between all devices to verify connectivity. Tested DHCP functionality by checking leased IP addresses on the router. Verified printer and PC could communicate through the switch. Confirmed that all devices successfully acquired IP addresses in the correct subnet range.",
-    learned: "Understanding DHCP server configuration and IP address management. Network device connectivity relies on proper IP configuration and routing. The role of switches in creating network segments. Practical implementation of network design concepts in Cisco Packet Tracer.",
-    github: "",
+    name: "Lab 01 — Home LAN (wired)",
+    objective:
+      "Build a small wired home-style LAN in Packet Tracer and get every end device addressed automatically by the router, then verify communication between them.",
+    topology:
+      "Router1 (2911) connects to Switch0 (2960-24TT) on GigabitEthernet0/1, and the switch connects PC0, Laptop0, and Printer0 — a single 192.168.1.0/24 broadcast domain.",
+    devices: "1 × Cisco 2911 router, 1 × Cisco 2960-24TT switch, 1 × PC, 1 × laptop, 1 × network printer",
+    configuration:
+      "Assigned 192.168.1.1/24 manually to GigabitEthernet0/1 and brought the interface up, then configured a DHCP pool on the router for the 192.168.1.0/24 network with 192.168.1.1 as the default router. End devices were set to DHCP.",
+    testing:
+      "Verified interface state with `show ip interface brief`, confirmed the switch as a neighbour with `show cdp neighbors` (2960 on Fas0/4), checked the DHCP bindings on the router and the addresses received on the PC, and pinged between hosts and the printer.",
+    learned:
+      "How a router acts as the DHCP server for a single LAN, why the LAN interface must be configured and up first, and how to confirm each layer — interface, neighbour, address, reachability — instead of assuming it works.",
+    github: "https://github.com/muynamarkandrei/cisco-packet-tracer-home-lab/tree/main/01-home-lan",
     image: physicalTopology,
   },
   {
-    name: "Cisco Packet Tracer Home Lab 02 - Wireless Network Integration",
-    objective: "Extend the LAN network by integrating a wireless access point to provide connectivity options and demonstrate understanding of wireless networking fundamentals and mixed wired/wireless network architecture.",
-    topology: "Wired LAN connected to a wireless access point. Router connects to a switch and access point. Access point provides wireless connectivity to laptop and mobile devices while maintaining wired connection to printers and desktops.",
-    devices: "1 Cisco 2911 Router, 1 Catalyst 2960 Switch, 1 Wireless Access Point (2960-24TT), 2 PCs, 1-2 Laptops with wireless adapters, 1 Network Printer, 1 Wireless Device",
-    configuration: "Configured router and DHCP as in Lab 01. Added wireless access point with SSID 'HOME-WIFI' and set to Infrastructure Mode. Configured DHCP pool for wireless clients (192.168.1.0/24). Verified access point connectivity to the main network through the switch.",
-    testing: "Tested wireless client connectivity to the access point. Verified wireless devices could obtain IP addresses from DHCP. Tested connectivity between wired and wireless devices using ping. Confirmed printer accessibility from both wired and wireless clients. Tested signal strength and link quality across the wireless network.",
-    learned: "Wireless network configuration and SSID broadcasting. Integration of wireless and wired networks in a single infrastructure. DHCP dynamic assignment for wireless clients. The importance of proper access point placement for signal coverage. Security considerations in wireless networks and authentication mechanisms.",
-    github: "",
+    name: "Lab 02 — Wireless LAN",
+    objective:
+      "Extend the wired lab with a wireless access point so a laptop joins the same network over Wi-Fi and still receives its address from the router's DHCP pool.",
+    topology:
+      "Router0 (2911) to Switch0 (2960-24TT), with PC0 wired to the switch and an AccessPoint-PT connected to the same switch. Laptop1 associates to the access point wirelessly.",
+    devices:
+      "1 × Cisco 2911 router, 1 × Cisco 2960-24TT switch, 1 × AccessPoint-PT, 1 × PC (wired), 1 × laptop fitted with a WPC300N Wireless-N notebook adapter",
+    configuration:
+      "Configured a DHCP pool named HOME-WIFI on the router for 192.168.1.0/24 with default router 192.168.1.1, connected the access point to the switch, and swapped the laptop's default module for the WPC300N wireless adapter so it could associate with the access point.",
+    testing:
+      "Confirmed on the laptop's wireless monitor that it was associated in Infrastructure Mode at 2.4 GHz with full signal strength and link quality, verified it received an address from the HOME-WIFI pool, and pinged between the wireless laptop and the wired host.",
+    learned:
+      "That a wireless client needs the right adapter module before it can associate at all, and that the access point simply bridges wireless clients into the same LAN and DHCP scope as the wired devices.",
+    github: "https://github.com/muynamarkandrei/cisco-packet-tracer-home-lab/tree/main/02-wireless-lan",
     image: wirelessTopology,
   },
 ];
@@ -343,61 +392,56 @@ export const certifications: {
   {
     name: "Computer Hardware Basics",
     issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/Computer_Hardware_Basics_certificate_markandreimuyna31-gmail-com_d594f38d-b4c4-426b-8d76-91ac058b6d50.pdf",
+    date: "Aug 2, 2026",
+    link: "/certificates/Computer_Hardware_Basics_certificate_markandreimuyna31-gmail-com_d594f38d-b4c4-426b-8d76-91ac058b6d50.pdf",
+  },
+  {
+    name: "IT Customer Support Basics",
+    issuer: "Cisco Networking Academy",
+    date: "Feb 5, 2026",
+    link: "/certificates/it-customer-support.pdf",
   },
   {
     name: "Introduction to Cybersecurity",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/intro_cyber.pdf",
+    issuer: "Cisco Networking Academy (DICT-ITU DTC Initiative)",
+    date: "Apr 18, 2025",
+    link: "/certificates/intro_cyber.pdf",
   },
   {
-    name: "Introduction to Cybersecurity v2",
+    name: "Introduction to Packet Tracer Exam",
     issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/intro-cyber2.pdf",
-  },
-  {
-    name: "Introduction to Packet Tracer",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/intro_packet.pdf",
-  },
-  {
-    name: "IT Customer Support",
-    issuer: "Google / Coursera",
-    date: "2024",
-    link: "/assets/portfolio/certificates/it-customer-support.pdf",
-  },
-  {
-    name: "Networks in the Cloud",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/networks_in_the_cloud.pdf",
-  },
-  {
-    name: "Networks, Threat & Security",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/networks_threat_and_security.pdf",
+    date: "May 27, 2024",
+    link: "/certificates/intro_packet.pdf",
   },
   {
     name: "Cloud Security Fundamentals",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/cloud_security_fundamentals.pdf",
+    issuer: "Palo Alto Networks",
+    date: "Jul 27, 2026",
+    link: "/certificates/cloud_security_fundamentals.pdf",
+  },
+  {
+    name: "Network Threats and Security",
+    issuer: "Palo Alto Networks",
+    date: "Jul 27, 2026",
+    link: "/certificates/networks_threat_and_security.pdf",
   },
   {
     name: "Data Center Security",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
-    link: "/assets/portfolio/certificates/data_center_security.pdf",
+    issuer: "Palo Alto Networks",
+    date: "Jul 28, 2026",
+    link: "/certificates/data_center_security.pdf",
   },
   {
-    name: "Salesforce Administration",
-    issuer: "Salesforce / Trailhead",
-    date: "2024",
-    link: "/assets/portfolio/certificates/salesforce.pdf",
+    name: "Networks in the Cloud",
+    issuer: "Palo Alto Networks",
+    date: "Jul 30, 2026",
+    link: "/certificates/networks_in_the_cloud.pdf",
+  },
+  {
+    name: "Salesforce Supported Virtual Internship Program 2025 — Philippines",
+    issuer: "SmartBridge (Salesforce partner)",
+    date: "Jan 8, 2026",
+    link: "/certificates/salesforce.pdf",
   },
 ];
+

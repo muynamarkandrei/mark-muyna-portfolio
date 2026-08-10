@@ -22,12 +22,13 @@ export function Experience() {
               <div className="min-w-0">
                 <h3 className="text-xl font-semibold">C&amp;E Publishing, Inc.</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  MIS Department — Technical Team · Practicum / OJT
+                  MIS Department — Technical Team · IT Support Intern (Practicum / OJT)
                 </p>
               </div>
               <p className="shrink-0 font-mono text-xs text-muted-foreground sm:text-right">
-                March 9, 2026 — completion of required 500 hours
+                March 2026 — June 2026 · 500 required hours completed
               </p>
+
             </header>
 
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -106,7 +107,7 @@ export function Experience() {
 
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((item, i) => (
-              <Reveal key={item.src} delay={i * 50}>
+              <Reveal key={`${item.category}-${item.src}`} delay={i * 50}>
                 <figure className="card-surface group h-full overflow-hidden">
                   <div className="overflow-hidden">
                     <img
