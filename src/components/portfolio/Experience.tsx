@@ -107,7 +107,7 @@ export function Experience() {
 
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((item, i) => (
-              <Reveal key={item.src} delay={i * 50}>
+              <Reveal key={`${item.category}-${item.src}`} delay={i * 50}>
                 <figure className="card-surface group h-full overflow-hidden">
                   <div className="overflow-hidden">
                     <img
