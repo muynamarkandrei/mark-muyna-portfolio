@@ -162,9 +162,10 @@ export const capstoneImages = [
   },
   {
     src: capstone3d,
-    alt: "3D capstone project visualization or component",
-    caption: "3D model or interactive component in the capstone project.",
+    alt: "Capstone PC build configurator with a 3D component viewer and compatibility checks",
+    caption: "PC build configurator with 3D component visualization and part selection.",
   },
+
 ];
 
 export const skillGroups = [
