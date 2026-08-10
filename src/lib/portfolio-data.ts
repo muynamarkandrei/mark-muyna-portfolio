@@ -19,11 +19,8 @@ import ojtTeam from "@/assets/portfolio/gallery/user-support/rfid-setup.jpg";
 import certificateHandover from "@/assets/portfolio/gallery/user-support/accomplishment.jpg";
 
 // Networking lab screenshots
-import dhcpConfig from "@/assets/portfolio/gallery/networking/dhcp_config.png";
 import physicalTopology from "@/assets/portfolio/gallery/networking/physical_topology.png";
 import wirelessTopology from "@/assets/portfolio/gallery/networking/topology.png";
-import routerInterfaces from "@/assets/portfolio/gallery/networking/router_interfaces.png";
-import pingTest from "@/assets/portfolio/gallery/networking/ping_test.png";
 
 // Capstone images
 import capstoneChat from "@/assets/portfolio/capstone/ai-chatbot.png";
