@@ -1,7 +1,5 @@
 # Mark's IT Compass
 
-MASTER PROMPT: PERSONAL IT PORTFOLIO WEBSITE
-
 1. PROJECT OVERVIEW
 
 Build a professional personal portfolio website for Mark Andrei B. Muyna, a BS Information Technology student and aspiring early-career IT professional.
