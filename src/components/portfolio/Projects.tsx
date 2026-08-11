@@ -27,7 +27,7 @@ export function Projects() {
                 Featured · Capstone
               </span>
               <h3 className="mt-3 text-2xl leading-tight font-semibold">
-                Intelligent E-Commerce Platform for PC Component Sales with AI Assistance and 3D
+                Web-Based E-Commerce Platform for PC Component Sales with AI Assistance and 3D
                 Visualization
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
