@@ -1,11 +1,9 @@
-import { useState } from "react";
+import { Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { gallery, galleryCategories, ojtAreas, type GalleryCategory } from "@/lib/portfolio-data";
-import { Placeholder } from "./Sections";
+import { ojtAreas } from "@/lib/portfolio-data";
 
 export function Experience() {
-  const [active, setActive] = useState<GalleryCategory | "All">("All");
-  const shown = active === "All" ? gallery : gallery.filter((g) => g.category === active);
 
   return (
     <section id="experience" className="border-t border-border bg-surface">
@@ -78,62 +76,13 @@ export function Experience() {
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
               Photos from the workbench, grouped by the kind of work involved.
             </p>
-          </Reveal>
-
-          <Reveal delay={60}>
-            <div
-              role="tablist"
-              aria-label="Gallery categories"
-              className="mt-6 flex flex-wrap gap-2"
+            <Link
+              to="/gallery"
+              className="mt-5 inline-flex items-center gap-2 rounded-md border border-border px-4 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
             >
-              {(["All", ...galleryCategories] as const).map((cat) => (
-                <button
-                  key={cat}
-                  role="tab"
-                  aria-selected={active === cat}
-                  type="button"
-                  onClick={() => setActive(cat)}
-                  className={`rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
-                    active === cat
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border bg-card text-muted-foreground hover:bg-secondary hover:text-foreground"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
+              View practicum gallery <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
           </Reveal>
-
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {shown.map((item, i) => (
-              <Reveal key={`${item.category}-${item.src}`} delay={i * 50}>
-                <figure className="card-surface group h-full overflow-hidden">
-                  <div className="overflow-hidden">
-                    <img
-                      src={item.src}
-                      alt={item.alt}
-                      loading="lazy"
-                      className="aspect-4/3 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  <figcaption className="p-4">
-                    <span className="font-mono text-[10px] tracking-[0.14em] text-accent uppercase">
-                      {item.category}
-                    </span>
-                    <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                      {item.caption}
-                    </p>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-            {shown.length === 0 ? (
-              <Reveal className="sm:col-span-2 lg:col-span-3">
-                <Placeholder label={`OJT ${active.toUpperCase()}`} className="aspect-21/9" />
-              </Reveal>
-            ) : null}
-          </div>
         </div>
       </div>
     </section>
