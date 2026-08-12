@@ -2,15 +2,16 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#case-studies", label: "Case Studies" },
-  { href: "#skills", label: "Skills" },
-  { href: "#certifications", label: "Certifications" },
-  { href: "#resume", label: "Resume" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#case-studies", label: "Case Studies" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#certifications", label: "Certifications" },
+  { href: "/#resume", label: "Resume" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function SiteNav() {
@@ -34,7 +35,7 @@ export function SiteNav() {
         aria-label="Main navigation"
         className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 lg:flex lg:justify-between"
       >
-        <a href="#home" className="flex min-w-0 items-center gap-2.5">
+        <a href="/#home" className="flex min-w-0 items-center gap-2.5">
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-ink font-mono text-sm font-semibold text-ink-foreground">
             MM
           </span>
