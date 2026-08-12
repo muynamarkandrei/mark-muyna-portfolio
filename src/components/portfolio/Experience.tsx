@@ -4,8 +4,6 @@ import { Reveal, SectionHeading } from "./Reveal";
 import { ojtAreas } from "@/lib/portfolio-data";
 
 export function Experience() {
-  const [active, setActive] = useState<GalleryCategory | "All">("All");
-  const shown = active === "All" ? gallery : gallery.filter((g) => g.category === active);
 
   return (
     <section id="experience" className="border-t border-border bg-surface">
