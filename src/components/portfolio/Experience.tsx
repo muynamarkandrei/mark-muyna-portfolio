@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { gallery, galleryCategories, ojtAreas, type GalleryCategory } from "@/lib/portfolio-data";
-import { Placeholder } from "./Sections";
+import { ojtAreas } from "@/lib/portfolio-data";
 
 export function Experience() {
   const [active, setActive] = useState<GalleryCategory | "All">("All");
