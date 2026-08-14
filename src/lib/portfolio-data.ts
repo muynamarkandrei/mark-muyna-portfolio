@@ -80,86 +80,147 @@ export const gallery: {
 }[] = [
   // Hardware category
   {
-    src: ojtPc,
-    alt: "Working inside an open desktop tower, checking internal cables and drive connections",
+    src: insideTower,
+    alt: "Mark working inside an open desktop computer tower, checking internal cables and components",
     category: "Hardware",
-    caption: "Troubleshooting and opening a desktop unit to inspect internal components.",
+    caption: "Inspecting a desktop tower's internal cabling and components during troubleshooting.",
   },
   {
-    src: ojtHardware,
-    alt: "Sample equipment and hardware components at the workbench",
+    src: unboxingLaptop,
+    alt: "Unboxing a new laptop at the technical workbench",
     category: "Hardware",
-    caption: "Examining and preparing hardware equipment before deployment.",
+    caption: "Unboxing and preparing a new laptop for deployment.",
+  },
+  {
+    src: ojtPc,
+    alt: "Checking the back panel and connections of a desktop system unit",
+    category: "Hardware",
+    caption: "Checking rear-panel connections and peripherals on a desktop unit.",
   },
   {
     src: miniUnit,
-    alt: "Mini system unit being configured",
+    alt: "Compact mini system unit being configured",
     category: "Hardware",
-    caption: "Setting up a compact mini system unit.",
+    caption: "Setting up a compact mini system unit for a user.",
   },
   {
-    src: printerTest,
-    alt: "Testing printer connectivity and functionality",
+    src: acerPredator,
+    alt: "Acer Predator gaming laptop powered on and ready for setup",
     category: "Hardware",
-    caption: "Conducting printer tests and connectivity verification.",
+    caption: "High-performance laptop ready for software installation and configuration.",
   },
   {
-    src: configureRouter,
-    alt: "Configuring network router settings",
+    src: ojtHardware,
+    alt: "Sample equipment and robotics hardware project",
     category: "Hardware",
-    caption: "Router configuration and network device setup.",
-  },
-  {
-    src: fixLanHub,
-    alt: "Repairing and fixing a LAN hub",
-    category: "Hardware",
-    caption: "Troubleshooting and repairing network connectivity equipment.",
+    caption: "Sample equipment and hardware project assembly.",
   },
   // PC & Windows category
   {
-    src: ojtSetup,
-    alt: "Connecting a desktop tower to a wall-mounted monitor and power strip",
+    src: workstationWall,
+    alt: "Setting up a desktop workstation connected to a wall-mounted monitor",
     category: "PC & Windows",
-    caption: "Setting up a workstation with proper connections and display configuration.",
+    caption: "Setting up a desktop workstation with a wall-mounted display.",
+  },
+  {
+    src: windowsSetup,
+    alt: "Configuring Windows setup on multiple laptops",
+    category: "PC & Windows",
+    caption: "Running Windows setup across multiple new laptops.",
+  },
+  {
+    src: stagingLaptops,
+    alt: "Multiple laptops being staged and prepared at a workstation",
+    category: "PC & Windows",
+    caption: "Staging several laptops for deployment and user assignment.",
+  },
+  {
+    src: ojtSetup,
+    alt: "Connecting a desktop tower to a monitor and power strip",
+    category: "PC & Windows",
+    caption: "Assembling a workstation with proper power and display connections.",
+  },
+  {
+    src: cleanStation,
+    alt: "Clean technical workbench with wall-mounted monitors",
+    category: "PC & Windows",
+    caption: "Working at a clean staging station with multiple displays.",
   },
   {
     src: ojtWindows,
-    alt: "Office setup with desktop computers",
+    alt: "Office workstation environment with desktop computers",
     category: "PC & Windows",
-    caption: "Complete office workstation environment setup.",
+    caption: "Office workstation environment setup and support.",
   },
   // Software category
   {
+    src: softwareConfig,
+    alt: "Working through software configuration notes on a laptop",
+    category: "Software",
+    caption: "Following configuration notes during software setup.",
+  },
+  {
     src: ojtWorkstation,
-    alt: "HR department setup with software installation",
+    alt: "Configuring multiple laptops for a department",
     category: "Software",
     caption: "Software configuration and installation for department workstations.",
-  },
-  {
-    src: ojtLaptop,
-    alt: "Network switch configuration and setup",
-    category: "Software",
-    caption: "Switch installation and network topology configuration.",
-  },
-  // User Support category
-  {
-    src: ojtTeam,
-    alt: "Working with RFID technology setup",
-    category: "User Support",
-    caption: "RFID system implementation and technical support.",
-  },
-  {
-    src: certificateHandover,
-    alt: "Practicum completion and certificate recognition",
-    category: "User Support",
-    caption: "Completion of the practicum with achievement recognition.",
   },
   // Printers category
   {
     src: printerTest,
-    alt: "Conducting printer connectivity testing and troubleshooting",
+    alt: "Testing printer output and scanner functionality",
     category: "Printers",
-    caption: "Printer tests and connectivity verification.",
+    caption: "Running printer and scanner tests to verify functionality.",
+  },
+  // Networking category
+  {
+    src: networkSwitch,
+    alt: "Network switch with active link and activity lights",
+    category: "Networking",
+    caption: "Network switch showing active link lights and connected cabling.",
+  },
+  {
+    src: configureRouter,
+    alt: "Configuring a router or access point",
+    category: "Networking",
+    caption: "Router and wireless access point configuration.",
+  },
+  {
+    src: fixLanHub,
+    alt: "Working on network cables and a LAN hub",
+    category: "Networking",
+    caption: "Troubleshooting and repairing LAN hub and cable connections.",
+  },
+  {
+    src: setupSwitch,
+    alt: "Working on a network switch with connected cables",
+    category: "Networking",
+    caption: "Switch installation and network cabling work.",
+  },
+  // User Support category
+  {
+    src: teamWorkbench,
+    alt: "Mark and a colleague at the MIS technical workbench",
+    category: "User Support",
+    caption: "Working alongside the MIS technical team at the workbench.",
+  },
+  {
+    src: certificateGroup,
+    alt: "Mark and colleagues holding practicum completion certificates",
+    category: "User Support",
+    caption: "Practicum completion certificate recognition with the team.",
+  },
+  {
+    src: certificateHandover,
+    alt: "Practicum completion certificate handover",
+    category: "User Support",
+    caption: "Receiving the practicum completion certificate.",
+  },
+  {
+    src: ojtTeam,
+    alt: "Configuring an RFID book-security scanner for the library",
+    category: "User Support",
+    caption: "Setting up and testing an RFID scanner for library use.",
   },
 ];
 
@@ -179,7 +240,11 @@ export const capstoneImages = [
     alt: "Capstone PC build configurator with a 3D component viewer and compatibility checks",
     caption: "PC build configurator with 3D component visualization and part selection.",
   },
-
+  {
+    src: capstoneMessenger,
+    alt: "Capstone platform Messenger chat interface for customer support",
+    caption: "Customer support chat interface for order and product inquiries.",
+  },
 ];
 
 export const skillGroups = [
