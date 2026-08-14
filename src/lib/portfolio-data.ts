@@ -3,20 +3,33 @@ import ojtPc from "@/assets/portfolio/gallery/hardware/troubleshooting-system-un
 import ojtHardware from "@/assets/portfolio/gallery/hardware/sample-equipment.jpg";
 import miniUnit from "@/assets/portfolio/gallery/hardware/mini-system-unit.jpg";
 import printerTest from "@/assets/portfolio/gallery/hardware/printer-test.jpg";
-import configureRouter from "@/assets/portfolio/gallery/hardware/configure-router.jpg";
-import fixLanHub from "@/assets/portfolio/gallery/hardware/fix-lan-hub.jpg";
+import insideTower from "@/assets/portfolio/gallery/hardware/c1e07ea1-d646-4577-b790-17543c6ab41e.jpg";
+import unboxingLaptop from "@/assets/portfolio/gallery/hardware/c294f773-a935-4630-8515-4df5bbd49efb.jpg";
+import acerPredator from "@/assets/portfolio/gallery/hardware/926267ce-d4e6-41bc-ba97-87347c3390f4.jpg";
 
 // PC & Windows gallery images
 import ojtSetup from "@/assets/portfolio/gallery/pc-windows/setup-new-devices.jpg";
 import ojtWindows from "@/assets/portfolio/gallery/pc-windows/office.jpg";
+import workstationWall from "@/assets/portfolio/gallery/pc-windows/ca2f96b3-b497-44e0-9ec0-85363fc0a514.jpg";
+import windowsSetup from "@/assets/portfolio/gallery/pc-windows/034dadef-ccc1-4e95-8111-52b7ae21fcae.jpg";
+import stagingLaptops from "@/assets/portfolio/gallery/pc-windows/1112f21f-f8df-4d2d-92cb-1b718385703b.jpg";
+import cleanStation from "@/assets/portfolio/gallery/pc-windows/clean-station.jpg";
 
 // Software gallery images
 import ojtWorkstation from "@/assets/portfolio/gallery/software/setup-hr.jpg";
-import ojtLaptop from "@/assets/portfolio/gallery/software/setup-switch.jpg";
+import setupSwitch from "@/assets/portfolio/gallery/software/setup-switch.jpg";
+import softwareConfig from "@/assets/portfolio/gallery/software/f801b3fa-f7b7-41e1-afe2-1b0a97460b19.jpg";
 
 // User Support gallery images
 import ojtTeam from "@/assets/portfolio/gallery/user-support/rfid-setup.jpg";
 import certificateHandover from "@/assets/portfolio/gallery/user-support/accomplishment.jpg";
+import teamWorkbench from "@/assets/portfolio/gallery/user-support/4e71e9d4-40f9-4035-96a4-985583953d00.jpg";
+import certificateGroup from "@/assets/portfolio/gallery/user-support/415df4e2-981c-4d32-8b45-3db4a6d6f9e9.jpg";
+
+// Networking gallery images
+import networkSwitch from "@/assets/portfolio/gallery/software/e650ca4e-d1c2-4194-8eb4-6982b4a0d6e7.jpg";
+import configureRouter from "@/assets/portfolio/gallery/hardware/configure-router.jpg";
+import fixLanHub from "@/assets/portfolio/gallery/hardware/fix-lan-hub.jpg";
 
 // Networking lab screenshots
 import physicalTopology from "@/assets/portfolio/gallery/networking/physical_topology.png";
@@ -26,6 +39,7 @@ import wirelessTopology from "@/assets/portfolio/gallery/networking/topology.png
 import capstoneChat from "@/assets/portfolio/capstone/ai-chatbot.png";
 import capstoneLanding from "@/assets/portfolio/capstone/landing-page.png";
 import capstone3d from "@/assets/portfolio/capstone/3d-capstone.png";
+import capstoneMessenger from "@/assets/portfolio/capstone/Messenger_creation_18634BB8-9CF6-4586-A72E-3995061642DF.jpeg";
 
 // Profile image
 import professionalHeadshot from "@/assets/portfolio/profile/headshot.png";
