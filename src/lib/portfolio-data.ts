@@ -132,7 +132,7 @@ export const gallery: {
     src: stagingLaptops,
     alt: "Multiple laptops being staged and prepared at a workstation",
     category: "PC & Windows",
-    caption: "Staging several laptops for deployment and user assignment.",
+    caption: "Batch-staging laptops at the workbench before user assignment.",
   },
   {
     src: ojtSetup,
@@ -142,9 +142,9 @@ export const gallery: {
   },
   {
     src: cleanStation,
-    alt: "Clean technical workbench with wall-mounted monitors",
+    alt: "Organized technical workbench in the MIS area",
     category: "PC & Windows",
-    caption: "Working at a clean staging station with multiple displays.",
+    caption: "Keeping the MIS staging area organized between deployments.",
   },
   {
     src: ojtWindows,
