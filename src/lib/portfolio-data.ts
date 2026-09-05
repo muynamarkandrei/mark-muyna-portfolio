@@ -226,11 +226,6 @@ export const gallery: {
 
 export const capstoneImages = [
   {
-    src: capstoneChat,
-    alt: "Capstone e-commerce homepage with the AI shopping assistant panel open",
-    caption: "Homepage with the AI assistant handling product and order questions.",
-  },
-  {
     src: capstoneLanding,
     alt: "Capstone project landing page design",
     caption: "Landing page showcasing the main features and call-to-action.",
