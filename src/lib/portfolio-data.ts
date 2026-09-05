@@ -36,9 +36,10 @@ import physicalTopology from "@/assets/portfolio/gallery/networking/physical_top
 import wirelessTopology from "@/assets/portfolio/gallery/networking/topology.png";
 
 // Capstone images
+import capstoneChat from "@/assets/portfolio/capstone/ai-chatbot.png";
 import capstoneLanding from "@/assets/portfolio/capstone/landing-page.png";
 import capstone3d from "@/assets/portfolio/capstone/3d-capstone.png";
-import capstoneMessenger from "@/assets/portfolio/capstone/Messenger_creation_18634BB8-9CF6-4586-A72E-3995061642DF.jpeg";
+
 
 
 // Profile image
@@ -226,6 +227,11 @@ export const gallery: {
 
 export const capstoneImages = [
   {
+    src: capstoneChat,
+    alt: "Capstone e-commerce homepage with the AI shopping assistant panel open",
+    caption: "Homepage with the AI assistant handling product and order questions.",
+  },
+  {
     src: capstoneLanding,
     alt: "Capstone project landing page design",
     caption: "Landing page showcasing the main features and call-to-action.",
@@ -234,11 +240,6 @@ export const capstoneImages = [
     src: capstone3d,
     alt: "Capstone PC build configurator with a 3D component viewer and compatibility checks",
     caption: "PC build configurator with 3D component visualization and part selection.",
-  },
-  {
-    src: capstoneMessenger,
-    alt: "Capstone platform Messenger chat interface for customer support",
-    caption: "Customer support chat interface for order and product inquiries.",
   },
 ];
 
