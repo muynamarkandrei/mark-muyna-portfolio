@@ -22,7 +22,6 @@ import softwareConfig from "@/assets/portfolio/gallery/software/f801b3fa-f7b7-41
 
 // User Support gallery images
 import ojtTeam from "@/assets/portfolio/gallery/user-support/rfid-setup.jpg";
-import certificateHandover from "@/assets/portfolio/gallery/user-support/accomplishment.jpg";
 import certificateGroup from "@/assets/portfolio/gallery/user-support/415df4e2-981c-4d32-8b45-3db4a6d6f9e9.jpg";
 import cleanStation from "@/assets/portfolio/gallery/user-support/clean-station.jpg";
 
