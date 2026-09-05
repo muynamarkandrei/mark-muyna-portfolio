@@ -22,7 +22,6 @@ import softwareConfig from "@/assets/portfolio/gallery/software/f801b3fa-f7b7-41
 
 // User Support gallery images
 import ojtTeam from "@/assets/portfolio/gallery/user-support/rfid-setup.jpg";
-import certificateHandover from "@/assets/portfolio/gallery/user-support/accomplishment.jpg";
 import certificateGroup from "@/assets/portfolio/gallery/user-support/415df4e2-981c-4d32-8b45-3db4a6d6f9e9.jpg";
 import cleanStation from "@/assets/portfolio/gallery/user-support/clean-station.jpg";
 
@@ -133,7 +132,7 @@ export const gallery: {
     src: stagingLaptops,
     alt: "Multiple laptops being staged and prepared at a workstation",
     category: "PC & Windows",
-    caption: "Staging several laptops for deployment and user assignment.",
+    caption: "Batch-staging laptops at the workbench before user assignment.",
   },
   {
     src: ojtSetup,
@@ -143,9 +142,9 @@ export const gallery: {
   },
   {
     src: cleanStation,
-    alt: "Clean technical workbench with wall-mounted monitors",
+    alt: "Organized technical workbench in the MIS area",
     category: "PC & Windows",
-    caption: "Working at a clean staging station with multiple displays.",
+    caption: "Keeping the MIS staging area organized between deployments.",
   },
   {
     src: ojtWindows,
@@ -210,12 +209,6 @@ export const gallery: {
     alt: "Mark and colleagues holding practicum completion certificates",
     category: "User Support",
     caption: "Practicum completion certificate recognition with the team.",
-  },
-  {
-    src: certificateHandover,
-    alt: "Practicum completion certificate handover",
-    category: "User Support",
-    caption: "Receiving the practicum completion certificate.",
   },
   {
     src: ojtTeam,
