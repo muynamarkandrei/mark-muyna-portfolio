@@ -277,58 +277,72 @@ export const skillGroups = [
   {
     title: "Programming & Web Development",
     items: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Basic web development concepts",
+      "HTML • CSS • JavaScript",
+      "Basic web development",
       "AI-assisted development workflows",
     ],
   },
+];
+
+export const currentlyBuilding = [
+  "Linux fundamentals",
+  "Networking fundamentals",
+  "Systems administration",
+  "Infrastructure",
+  "Cloud technologies",
 ];
 
 export const ojtAreas = [
   {
     title: "Windows Deployment & PC Setup",
     points: [
-      "Completed Windows setup on new laptops and desktops, including bypassing the online account requirement with oobe\\bypassnro",
-      "Renamed accounts to the company standard (<Department>-<First Initial><Surname>) and created a separate Admin IT account",
-      "Removed preinstalled antivirus and conflicting Microsoft products before installing licensed Microsoft Office and applying the product key",
-      "Installed the standard application set: SAP, Microsoft Office, company security software, AnyDesk, WinRAR, IP Messenger, browser",
-      "Verified unit specifications against the inventory records",
-      "Set up mini PCs and reused units for reassignment to new users",
+      "Completed Windows setup and OOBE configuration on new laptops and desktops, including local account setup when required",
+      "Renamed accounts to the company standard and created a separate Admin IT account",
+      "Installed and licensed the standard application set (SAP, Microsoft Office, security software, AnyDesk, IP Messenger)",
+      "Verified unit specifications against inventory records and prepared reused units for reassignment",
+    ],
+  },
+  {
+    title: "Hardware Troubleshooting",
+    points: [
+      "Diagnosed power-on beep codes to a poorly seated RAM module and reseated it until the unit posted",
+      "Opened and inspected desktop units, checking internal cabling and component connections",
+      "Checked and replaced peripheral and display connections on reported workstations",
     ],
   },
   {
     title: "Printer & Scanner Support",
     points: [
-      "Installed network printers by adding a TCP/IP port using the printer's own IP address, then printing a test page",
-      "Connected multiple printers to a single workstation and renamed them for easy identification",
-      "Set up wireless printers and scanners for the HR department, including driver-only selective installs",
-      "Configured scanner shortcuts in Capture v5 Pro (300 DPI, simplex default, custom output path and file type)",
-      "Reset Epson waste ink pad counters with the adjustment program, then ran power cleaning and test prints",
+      "Installed network printers via TCP/IP ports and verified with test pages",
+      "Set up wireless printers and scanners for the HR department, including driver-only installs",
+      "Configured scanner shortcuts (DPI, output path, file type) in Capture v5 Pro",
       "Diagnosed slow or unreachable printers with ping checks, restarts, and print quality tests",
     ],
   },
   {
-    title: "Networking & Cabling",
+    title: "Networking & LAN Cabling",
     points: [
-      "Cut, terminated, and crimped RJ45 LAN cables (10 m and 20 m runs) following the standard wire order",
-      "Tested finished cables with a network tester and peer-to-peer connections, re-terminating ends when a link failed",
-      "Reorganized hub wiring, removed dead cables, and rerouted runs away from chair wheels",
-      "Connected printers and telephones to the network over LAN cabling and confirmed the link",
-      "Assisted with a department Wi-Fi reset, coordinating with the network admin and reconnecting every affected device",
-      "Restored a blocked user's Wi-Fi access through the company's web-based network management tool",
+      "Cut, terminated, crimped, and tested RJ45 LAN cables (10 m and 20 m runs)",
+      "Reorganized hub wiring and rerouted cable runs",
+      "Connected printers and telephones to the network over LAN cabling",
+      "Assisted with a department Wi-Fi reset and reconnected affected devices",
     ],
   },
   {
-    title: "Application & User Support",
+    title: "Application Support",
     points: [
       "Configured Microsoft Outlook and resolved send/receive failures",
       "Installed Adobe Acrobat Pro with serial activation for an affiliate office",
-      "Set up IP Messenger with the correct user name and department",
-      "Installed a payroll application and checked a KIOSK system unit",
-      "Set up and troubleshot RFID book-security scanners for the library, adjusting range and alert settings",
+      "Set up IP Messenger and a payroll application, and checked a KIOSK system unit",
+      "Set up and troubleshot RFID book-security scanners for the library",
+    ],
+  },
+  {
+    title: "User Support",
+    points: [
       "Walked employees through printing and scanning so they could repeat the steps on their own",
+      "Explained what caused an issue and what was done about it in plain terms",
+      "Kept basic technical documentation and logbooks for completed work",
     ],
   },
 ];
