@@ -36,10 +36,10 @@ import physicalTopology from "@/assets/portfolio/gallery/networking/physical_top
 import wirelessTopology from "@/assets/portfolio/gallery/networking/topology.png";
 
 // Capstone images
-import capstoneChat from "@/assets/portfolio/capstone/ai-chatbot.png";
 import capstoneLanding from "@/assets/portfolio/capstone/landing-page.png";
 import capstone3d from "@/assets/portfolio/capstone/3d-capstone.png";
 import capstoneMessenger from "@/assets/portfolio/capstone/Messenger_creation_18634BB8-9CF6-4586-A72E-3995061642DF.jpeg";
+
 
 // Profile image
 import professionalHeadshot from "@/assets/portfolio/profile/headshot.png";
