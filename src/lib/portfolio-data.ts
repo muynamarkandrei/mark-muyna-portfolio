@@ -211,12 +211,6 @@ export const gallery: {
     caption: "Practicum completion certificate recognition with the team.",
   },
   {
-    src: certificateHandover,
-    alt: "Practicum completion certificate handover",
-    category: "User Support",
-    caption: "Receiving the practicum completion certificate.",
-  },
-  {
     src: ojtTeam,
     alt: "Configuring an RFID book-security scanner for the library",
     category: "User Support",
