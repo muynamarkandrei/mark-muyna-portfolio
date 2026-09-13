@@ -86,7 +86,8 @@ export function Hero() {
               I like figuring out how things actually work — and why they stop working. Most of my
               hands-on experience comes from my practicum with a corporate MIS team, where I set up
               and fixed computers, printers, applications, and LAN connections for everyday users.
-              I'm building out my networking fundamentals through Cisco Packet Tracer labs at home.
+              I'm building my networking fundamentals through Cisco Packet Tracer labs and
+              hands-on troubleshooting experience.
             </p>
           </Reveal>
           <Reveal delay={240}>
@@ -172,15 +173,11 @@ export function About() {
       <div className="mt-10 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
         <Reveal className="min-w-0 space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            My interest in technology started casually. As a kid I was the one poking around phones —
-            installing games and apps, digging through settings, searching for answers online, and
-            eventually learning how to reset a device when I'd broken something. Fixing what I broke
-            turned out to be the part I enjoyed most.
-          </p>
-          <p>
-            That curiosity grew into wanting to understand the layer underneath: how computers
-            communicate, how applications depend on the system around them, how networks connect
-            everything, and why things fail the way they do.
+            My interest in technology started casually — as a kid I was the one digging through
+            phone settings, searching for answers online, and fixing whatever I'd broken. That
+            curiosity grew into wanting to understand the layer underneath: how computers
+            communicate, how applications depend on the system around them, and why things fail
+            the way they do.
           </p>
           <p>
             My practicum made all of that practical. Working with a corporate MIS technical team
@@ -275,10 +272,12 @@ export function ResumeSection() {
       <div className="card-surface grid gap-8 p-8 lg:grid-cols-[1fr_auto] lg:items-center">
         <Reveal className="min-w-0">
           <p className="font-mono text-xs tracking-[0.18em] text-accent uppercase">Resume</p>
-          <h2 className="mt-3 text-3xl font-semibold">One page, no padding</h2>
+          <h2 className="mt-3 text-3xl font-semibold">
+            One-page resume focused on IT Support
+          </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
-            A concise summary of my practicum experience, technical skills, academic project work,
-            and self-directed networking labs — formatted to be easy to scan and ATS-friendly.
+            A one-page resume focused on IT Support, networking, technical support experience, and
+            hands-on projects — formatted to be easy to scan and ATS-friendly.
           </p>
         </Reveal>
         <Reveal delay={80}>
@@ -310,7 +309,7 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-5 py-20">
         <Reveal className="max-w-2xl">
           <p className="font-mono text-xs tracking-[0.18em] uppercase opacity-70">Contact</p>
-          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Let's talk</h2>
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Let's Connect</h2>
           <p className="mt-4 text-base leading-relaxed opacity-80">
             I'm looking for entry-level IT support, helpdesk, or infrastructure roles. The fastest
             way to reach me is email — I'm happy to walk through anything on this site in more
