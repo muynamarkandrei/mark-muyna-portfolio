@@ -5,7 +5,7 @@ import { capstoneImages, ciscoLabs } from "@/lib/portfolio-data";
 const contributions = [
   "Conducted stakeholder interviews and analyzed business workflows to identify operational challenges, translating SME requirements into system features that streamlined inventory management, sales tracking, and delivery processes.",
   "Coordinated project discussions, managed project documentation, and designed the application's UI/UX in Figma, keeping development aligned with business objectives and academic requirements throughout the project lifecycle.",
-  "Validated system functionality through testing and feature reviews while maintaining the research manuscript, ensuring the platform incorporated essential e-commerce capabilities, AI-assisted recommendations, automated reporting, and administrative tools that addressed identified business needs.",
+  "Validated system functionality through testing and feature reviews while maintaining the research manuscript, helping ensure the platform met its defined e-commerce, AI-assisted, reporting, and administrative requirements.",
 ];
 
 const stack = ["HTML", "CSS", "JavaScript", "Figma", "AI-assisted workflows"];

@@ -59,13 +59,17 @@ export function Experience() {
               ))}
             </div>
 
-            <div className="mt-8 rounded-lg border border-border p-5">
-              <h4 className="text-sm font-semibold">User support</h4>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                A big part of the role was simply helping people: walking employees through printing
-                and scanning, explaining what caused an issue and what I did about it, and making
-                sure they could repeat the steps themselves next time.
+            <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-lg border border-border p-5">
+              <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+                The detailed procedures behind this work — diagnostics, fixes, and what I learned —
+                are written up as individual case studies.
               </p>
+              <a
+                href="#case-studies"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                View Technical Case Studies <ArrowRight className="h-4 w-4" aria-hidden />
+              </a>
             </div>
           </article>
         </Reveal>

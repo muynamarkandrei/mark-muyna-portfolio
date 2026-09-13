@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { caseStudies, skillGroups } from "@/lib/portfolio-data";
+import { caseStudies, skillGroups, currentlyBuilding } from "@/lib/portfolio-data";
 
 export function CaseStudies() {
   const [open, setOpen] = useState<number | null>(0);
@@ -76,7 +76,7 @@ export function Skills() {
     <section id="skills" className="mx-auto max-w-6xl px-5 py-20">
       <SectionHeading
         eyebrow="Skills"
-        title="Technical expertise"
+        title="Technical Skills"
         intro="Grouped by area, and limited to what I've actually worked with during my practicum, coursework, project work, and home labs."
       />
       <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -100,12 +100,23 @@ export function Skills() {
         ))}
       </div>
       <Reveal delay={120} className="mt-6">
-        <p className="rounded-lg border border-border bg-surface p-5 text-sm leading-relaxed text-muted-foreground">
-          Worth being clear about: my web development work is entry-level and often
-          AI-assisted, and I don't claim professional Linux, Python, cybersecurity, or advanced
-          networking experience. Those are areas I'm interested in, not areas I've worked in
-          professionally.
-        </p>
+        <div className="rounded-lg border border-border bg-surface p-5">
+          <h3 className="text-sm font-semibold tracking-wide uppercase">Currently Building</h3>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {currentlyBuilding.map((item) => (
+              <li
+                key={item}
+                className="rounded-md bg-card px-2.5 py-1 font-mono text-[11px] text-muted-foreground"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Foundational knowledge of HTML, CSS, and JavaScript, with hands-on exposure through
+            academic web projects and AI-assisted development workflows.
+          </p>
+        </div>
       </Reveal>
     </section>
   );

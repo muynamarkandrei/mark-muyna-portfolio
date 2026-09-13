@@ -170,7 +170,8 @@ export const gallery: {
     src: printerTest,
     alt: "Testing printer output and scanner functionality",
     category: "Printers",
-    caption: "Running printer and scanner tests to verify functionality.",
+    caption:
+      "Network printer verification — confirmed TCP/IP connectivity with ping and validated output with test prints.",
   },
   // Networking category
   {
