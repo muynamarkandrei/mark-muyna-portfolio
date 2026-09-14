@@ -43,7 +43,7 @@ export function CaseStudies() {
                     </button>
                   </h3>
                   {isOpen ? (
-                    <dl className="grid gap-4 border-t border-border p-5 sm:grid-cols-2">
+                    <dl className="grid gap-4 border-t border-border p-5 lg:grid-cols-2">
                       {[
                         ["Problem", cs.problem],
                         ["Investigation", cs.investigation],

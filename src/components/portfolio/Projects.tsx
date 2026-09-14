@@ -3,9 +3,9 @@ import { Reveal, SectionHeading } from "./Reveal";
 import { capstoneImages, ciscoLabs } from "@/lib/portfolio-data";
 
 const contributions = [
-  "Conducted stakeholder interviews and analyzed business workflows to identify operational challenges, translating SME requirements into system features that streamlined inventory management, sales tracking, and delivery processes.",
-  "Coordinated project discussions, managed project documentation, and designed the application's UI/UX in Figma, keeping development aligned with business objectives and academic requirements throughout the project lifecycle.",
-  "Validated system functionality through testing and feature reviews while maintaining the research manuscript, helping ensure the platform met its defined e-commerce, AI-assisted, reporting, and administrative requirements.",
+  "Participated in stakeholder interviews and workflow analysis, then helped translate documented requirements into system features.",
+  "Coordinated project discussions, managed documentation, and designed the application's UI/UX in Figma.",
+  "Supported system testing, feature validation, academic research, and manuscript preparation, helping ensure the platform met its defined requirements.",
 ];
 
 const stack = ["HTML", "CSS", "JavaScript", "Figma", "AI-assisted workflows"];
@@ -31,7 +31,7 @@ export function Projects() {
                 Visualization
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                An academic system project built for a small PC-components business. The platform
+                An academic systems project developed for a small PC-components business. The platform
                 combined standard e-commerce functionality with an AI shopping assistant, automated
                 reporting, 3D product visualization, and administrative tools for inventory, sales,
                 and delivery tracking.
@@ -61,7 +61,7 @@ export function Projects() {
 
             <div className="min-w-0 space-y-4 border-t border-border bg-surface p-6 sm:p-8 lg:border-t-0 lg:border-l">
               {capstoneImages.map((img) => (
-                <figure key={img.src} className="overflow-hidden rounded-xl border border-border">
+                    <figure key={img.src} className="overflow-hidden rounded-lg border border-border">
                   <img
                     src={img.src}
                     alt={img.alt}
@@ -108,7 +108,7 @@ export function Projects() {
                   ["Connectivity testing", lab.testing],
                   ["What I learned", lab.learned],
                 ].map(([label, value]) => (
-                  <div key={label} className="grid gap-0.5 sm:grid-cols-[9.5rem_minmax(0,1fr)]">
+                  <div key={label} className="grid gap-0.5 lg:grid-cols-[9.5rem_minmax(0,1fr)]">
                     <dt className="font-mono text-[11px] tracking-wide text-muted-foreground uppercase">
                       {label}
                     </dt>
