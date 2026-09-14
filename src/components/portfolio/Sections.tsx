@@ -83,11 +83,10 @@ export function Hero() {
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              I like figuring out how things actually work — and why they stop working. Most of my
-              hands-on experience comes from my practicum with a corporate MIS team, where I set up
-              and fixed computers, printers, applications, and LAN connections for everyday users.
-              I'm building my networking fundamentals through Cisco Packet Tracer labs and
-              hands-on troubleshooting experience.
+              I completed a 500-hour IT support practicum with a corporate MIS technical team,
+              working on computers, printers, applications, and LAN connections for everyday users.
+              I'm continuing to build my networking fundamentals through Cisco Packet Tracer labs
+              and hands-on troubleshooting experience.
             </p>
           </Reveal>
           <Reveal delay={240}>
@@ -123,7 +122,7 @@ export function Hero() {
             {profile.profileImage ? (
               <img
                 src={profile.profileImage}
-                alt="Professional headshot"
+                alt="Professional portrait of Mark Andrei B. Muyna"
                 className="h-auto w-full rounded-lg object-cover aspect-4/5"
               />
             ) : (
@@ -173,23 +172,18 @@ export function About() {
       <div className="mt-10 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
         <Reveal className="min-w-0 space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            My interest in technology started casually — as a kid I was the one digging through
-            phone settings, searching for answers online, and fixing whatever I'd broken. That
-            curiosity grew into wanting to understand the layer underneath: how computers
-            communicate, how applications depend on the system around them, and why things fail
-            the way they do.
+            I like figuring out how things actually work — and why they stop working. That curiosity
+            grew from exploring device settings and solving small problems into wanting to understand
+            how computers, applications, and networks fit together.
           </p>
           <p>
-            My practicum made all of that practical. Working with a corporate MIS technical team
-            meant real employee problems — a computer that needed a full reset and reconfiguration, a
-            printer that wouldn't respond, an application that wouldn't install, a workstation with
-            no connectivity. It also made clear that IT isn't only coding or cybersecurity; a lot of
-            it is keeping the technology that people rely on every day working properly.
+            My practicum made that interest practical. Working with a corporate MIS technical team
+            meant helping with real employee issues involving computers, printers, applications, and
+            connectivity while learning the team's procedures and documenting completed work.
           </p>
           <p>
-            Right now I'm heading toward practical IT: support, systems, and networking. I want
-            enough breadth to see how devices, applications, and networks fit together, and enough
-            depth to diagnose common problems confidently — and remember the fix the next time.
+            I'm building toward IT support and infrastructure work, with a focus on practical
+            troubleshooting, systems, and networking fundamentals.
           </p>
         </Reveal>
         <Reveal delay={80} className="min-w-0">
@@ -216,8 +210,20 @@ export function About() {
 export function Certifications({
   items,
 }: {
-  items: { name: string; issuer: string; date: string; link?: string }[];
+  items: {
+    name: string;
+    issuer: string;
+    date: string;
+    category: "Networking & IT Support" | "Cybersecurity & Infrastructure Fundamentals" | "Additional Technical Experience";
+    link?: string;
+  }[];
 }) {
+  const categories = [
+    "Networking & IT Support",
+    "Cybersecurity & Infrastructure Fundamentals",
+    "Additional Technical Experience",
+  ] as const;
+
   return (
     <section id="certifications" className="border-t border-border bg-surface">
       <div className="mx-auto max-w-6xl px-5 py-20">
@@ -226,7 +232,7 @@ export function Certifications({
           title="Credentials"
           intro="Only verified credentials are listed here."
         />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 space-y-10">
           {items.length === 0 ? (
             <Reveal className="sm:col-span-2 lg:col-span-3">
               <div className="card-surface flex flex-col gap-4 p-6 sm:flex-row sm:items-center">
@@ -239,27 +245,34 @@ export function Certifications({
                 </p>
               </div>
             </Reveal>
-          ) : (
-            items.map((c, i) => (
-              <Reveal key={c.name} delay={i * 60}>
-                <article className="card-surface h-full p-5 transition-shadow hover:shadow-lg">
-                  <h3 className="text-base font-semibold">{c.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{c.issuer}</p>
-                  <p className="mt-1 font-mono text-xs text-muted-foreground">{c.date}</p>
-                  {c.link ? (
-                    <a
-                      href={c.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-flex text-sm font-medium text-primary underline-offset-4 hover:underline"
-                    >
-                      View credential
-                    </a>
-                  ) : null}
-                </article>
+          ) : categories.map((category) => (
+            <div key={category}>
+              <Reveal>
+                <h3 className="text-lg font-semibold">{category}</h3>
               </Reveal>
-            ))
-          )}
+              <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {items.filter((item) => item.category === category).map((c, i) => (
+                  <Reveal key={c.name} delay={i * 50}>
+                    <article className="card-surface h-full p-5 transition-shadow hover:shadow-lg">
+                      <h4 className="text-base font-semibold">{c.name}</h4>
+                      <p className="mt-1 text-sm text-muted-foreground">{c.issuer}</p>
+                      <p className="mt-1 font-mono text-xs text-muted-foreground">{c.date}</p>
+                      {c.link ? (
+                        <a
+                          href={c.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="mt-4 inline-flex text-sm font-medium text-primary underline-offset-4 hover:underline"
+                        >
+                          View credential
+                        </a>
+                      ) : null}
+                    </article>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

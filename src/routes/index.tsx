@@ -36,12 +36,12 @@ function Index() {
       <SiteNav />
       <main>
         <Hero />
-        <About />
         <Experience />
+        <Skills />
         <Projects />
         <CaseStudies />
-        <Skills />
         <Certifications items={certifications} />
+        <About />
         <ResumeSection />
         <Contact />
       </main>

@@ -26,7 +26,6 @@ import certificateGroup from "@/assets/portfolio/gallery/user-support/415df4e2-9
 import cleanStation from "@/assets/portfolio/gallery/user-support/clean-station.jpg";
 
 // Networking gallery images
-import networkSwitch from "@/assets/portfolio/gallery/software/e650ca4e-d1c2-4194-8eb4-6982b4a0d6e7.jpg";
 import configureRouter from "@/assets/portfolio/gallery/hardware/configure-router.jpg";
 import fixLanHub from "@/assets/portfolio/gallery/hardware/fix-lan-hub.jpg";
 
@@ -113,7 +112,7 @@ export const gallery: {
     src: ojtHardware,
     alt: "Sample equipment and robotics hardware project",
     category: "Hardware",
-    caption: "Sample equipment and hardware project assembly.",
+    caption: "Reviewing equipment and hardware components at the technical workbench.",
   },
   // PC & Windows category
   {
@@ -150,7 +149,7 @@ export const gallery: {
     src: ojtWindows,
     alt: "Office workstation environment with desktop computers",
     category: "PC & Windows",
-    caption: "Office workstation environment setup and support.",
+    caption: "Supporting desktop computers in the office workstation environment.",
   },
   // Software category
   {
@@ -174,12 +173,6 @@ export const gallery: {
       "Network printer verification — confirmed TCP/IP connectivity with ping and validated output with test prints.",
   },
   // Networking category
-  {
-    src: networkSwitch,
-    alt: "Network switch with active link and activity lights",
-    category: "Networking",
-    caption: "Network switch showing active link lights and connected cabling.",
-  },
   {
     src: configureRouter,
     alt: "Configuring a router or access point",
@@ -291,6 +284,17 @@ export const currentlyBuilding = [
   "Systems administration",
   "Infrastructure",
   "Cloud technologies",
+];
+
+export const supportCapabilities = [
+  "Desktop and laptop setup",
+  "Windows installation and troubleshooting",
+  "Printer and scanner configuration",
+  "Basic LAN connectivity troubleshooting",
+  "Software installation and configuration",
+  "Hardware diagnostics",
+  "End-user technical assistance",
+  "Basic network troubleshooting",
 ];
 
 export const ojtAreas = [
@@ -470,60 +474,70 @@ export const certifications: {
   name: string;
   issuer: string;
   date: string;
+  category: "Networking & IT Support" | "Cybersecurity & Infrastructure Fundamentals" | "Additional Technical Experience";
   link?: string;
 }[] = [
   {
     name: "Computer Hardware Basics",
     issuer: "Cisco Networking Academy",
     date: "Aug 2, 2026",
+    category: "Networking & IT Support",
     link: "/certificates/Computer_Hardware_Basics_certificate_markandreimuyna31-gmail-com_d594f38d-b4c4-426b-8d76-91ac058b6d50.pdf",
   },
   {
     name: "IT Customer Support Basics",
     issuer: "Cisco Networking Academy",
     date: "Feb 5, 2026",
+    category: "Networking & IT Support",
     link: "/certificates/it-customer-support.pdf",
   },
   {
     name: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy (DICT-ITU DTC Initiative)",
     date: "Apr 18, 2025",
+    category: "Cybersecurity & Infrastructure Fundamentals",
     link: "/certificates/intro_cyber.pdf",
   },
   {
     name: "Introduction to Packet Tracer Exam",
     issuer: "Cisco Networking Academy",
     date: "May 27, 2024",
+    category: "Networking & IT Support",
     link: "/certificates/intro_packet.pdf",
   },
   {
     name: "Cloud Security Fundamentals",
     issuer: "Palo Alto Networks",
     date: "Jul 27, 2026",
+    category: "Cybersecurity & Infrastructure Fundamentals",
     link: "/certificates/cloud_security_fundamentals.pdf",
   },
   {
     name: "Network Threats and Security",
     issuer: "Palo Alto Networks",
     date: "Jul 27, 2026",
+    category: "Cybersecurity & Infrastructure Fundamentals",
     link: "/certificates/networks_threat_and_security.pdf",
   },
   {
     name: "Data Center Security",
     issuer: "Palo Alto Networks",
     date: "Jul 28, 2026",
+    category: "Cybersecurity & Infrastructure Fundamentals",
     link: "/certificates/data_center_security.pdf",
   },
   {
     name: "Networks in the Cloud",
     issuer: "Palo Alto Networks",
     date: "Jul 30, 2026",
+    category: "Cybersecurity & Infrastructure Fundamentals",
     link: "/certificates/networks_in_the_cloud.pdf",
   },
   {
     name: "Salesforce Supported Virtual Internship Program 2025 — Philippines",
     issuer: "SmartBridge (Salesforce partner)",
     date: "Jan 8, 2026",
+    category: "Additional Technical Experience",
     link: "/certificates/salesforce.pdf",
   },
 ];

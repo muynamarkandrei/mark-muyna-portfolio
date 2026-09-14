@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { ojtAreas } from "@/lib/portfolio-data";
+import { ojtAreas, supportCapabilities } from "@/lib/portfolio-data";
 
 export function Experience() {
 
@@ -15,7 +15,7 @@ export function Experience() {
         />
 
         <Reveal className="mt-10">
-          <article className="card-surface p-6 sm:p-8">
+          <article className="card-surface border-t-4 border-t-primary p-6 sm:p-8">
             <header className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4 sm:flex sm:justify-between">
               <div className="min-w-0">
                 <h3 className="text-xl font-semibold">C&amp;E Publishing, Inc.</h3>
@@ -30,11 +30,10 @@ export function Experience() {
             </header>
 
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
-              I worked alongside the technical team on day-to-day support: preparing and configuring
-              computers, installing and troubleshooting printers, setting up applications, making and
-              testing LAN cables, and helping employees get back to work. Early on I shadowed and
-              followed demonstrated procedures; once I was familiar with them, my supervisors let me
-              handle those tasks on my own.
+              I worked alongside the technical team on day-to-day support: preparing computers,
+              troubleshooting hardware and printers, setting up applications, testing LAN cables,
+              and assisting employees. I learned through demonstrated procedures and completed
+              familiar tasks under the team's supervision.
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -59,7 +58,7 @@ export function Experience() {
               ))}
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-lg border border-border p-5">
+            <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-lg border border-primary/20 bg-primary/5 p-5">
               <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
                 The detailed procedures behind this work — diagnostics, fixes, and what I learned —
                 are written up as individual case studies.
@@ -73,6 +72,26 @@ export function Experience() {
             </div>
           </article>
         </Reveal>
+
+        <div className="mt-16">
+          <SectionHeading
+            eyebrow="Practical support"
+            title="What I Can Help With"
+            intro="Entry-level support tasks I have practiced through my corporate practicum, coursework, and networking labs."
+          />
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {supportCapabilities.map((item, index) => (
+              <Reveal key={item} delay={index * 35}>
+                <div className="flex h-full items-start gap-3 rounded-lg border border-border bg-card p-4">
+                  <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-secondary text-primary">
+                    <Check className="h-3.5 w-3.5" aria-hidden />
+                  </span>
+                  <p className="text-sm leading-relaxed">{item}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
 
         <div className="mt-16">
           <Reveal>
