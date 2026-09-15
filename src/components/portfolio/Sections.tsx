@@ -80,13 +80,18 @@ export function Hero() {
           <Reveal delay={120}>
             <p className="mt-4 text-lg font-medium text-foreground">{profile.title}</p>
             <p className="font-mono text-sm text-muted-foreground">{profile.focus}</p>
+            <p className="mt-2 font-medium text-foreground">
+              {profile.education.degree},{" "}
+              <span className="text-accent">{profile.education.honor}</span> —{" "}
+              {profile.education.shortSchool}
+            </p>
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              I completed a 500-hour IT support practicum with a corporate MIS technical team,
-              working on computers, printers, applications, and LAN connections for everyday users.
-              I'm continuing to build my networking fundamentals through Cisco Packet Tracer labs
-              and hands-on troubleshooting experience.
+              Recent BSIT cum laude graduate who completed a 500-hour IT support practicum with a
+              corporate MIS technical team, working on computers, printers, applications, and LAN
+              connections for everyday users. I'm continuing to build my networking fundamentals
+              through Cisco Packet Tracer labs and hands-on troubleshooting experience.
             </p>
           </Reveal>
           <Reveal delay={240}>
