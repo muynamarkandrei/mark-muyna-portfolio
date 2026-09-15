@@ -80,13 +80,18 @@ export function Hero() {
           <Reveal delay={120}>
             <p className="mt-4 text-lg font-medium text-foreground">{profile.title}</p>
             <p className="font-mono text-sm text-muted-foreground">{profile.focus}</p>
+            <p className="mt-2 font-medium text-foreground">
+              {profile.education.degree},{" "}
+              <span className="text-accent">{profile.education.honor}</span> —{" "}
+              {profile.education.shortSchool}
+            </p>
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              I completed a 500-hour IT support practicum with a corporate MIS technical team,
-              working on computers, printers, applications, and LAN connections for everyday users.
-              I'm continuing to build my networking fundamentals through Cisco Packet Tracer labs
-              and hands-on troubleshooting experience.
+              Recent BSIT cum laude graduate who completed a 500-hour IT support practicum with a
+              corporate MIS technical team, working on computers, printers, applications, and LAN
+              connections for everyday users. I'm continuing to build my networking fundamentals
+              through Cisco Packet Tracer labs and hands-on troubleshooting experience.
             </p>
           </Reveal>
           <Reveal delay={240}>
@@ -182,11 +187,28 @@ export function About() {
             connectivity while learning the team's procedures and documenting completed work.
           </p>
           <p>
-            I'm building toward IT support and infrastructure work, with a focus on practical
-            troubleshooting, systems, and networking fundamentals.
+            I graduated cum laude with a BS in Information Technology from PUP Santa Maria, Bulacan
+            (PUPSMB), and I'm building toward IT support and infrastructure work with a focus on
+            practical troubleshooting, systems, and networking fundamentals.
           </p>
         </Reveal>
-        <Reveal delay={80} className="min-w-0">
+        <Reveal delay={80} className="min-w-0 space-y-6">
+          <div className="card-surface overflow-hidden p-0">
+            <img
+              src={profile.education.photo}
+              alt={profile.education.alt}
+              className="h-auto w-full object-cover aspect-4/5"
+              loading="lazy"
+            />
+            <div className="p-5">
+              <h3 className="text-lg font-semibold">Education</h3>
+              <p className="mt-1 text-sm font-medium text-foreground">
+                {profile.education.degree}
+              </p>
+              <p className="text-sm text-accent">{profile.education.honor}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{profile.education.school}</p>
+            </div>
+          </div>
           <div className="card-surface p-6">
             <h3 className="text-lg font-semibold">What I'm building toward</h3>
             <ul className="mt-4 space-y-3">

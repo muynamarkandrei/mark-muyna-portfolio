@@ -42,6 +42,7 @@ import capstone3d from "@/assets/portfolio/capstone/3d-capstone.png";
 
 // Profile image
 import professionalHeadshot from "@/assets/portfolio/profile/headshot.png";
+import graduationPhoto from "@/assets/portfolio/profile/mark-graduation.jpg";
 
 export const PLACEHOLDER = "[TO BE PROVIDED]";
 
@@ -49,6 +50,14 @@ export const profile = {
   name: "Mark Andrei B. Muyna",
   title: "Aspiring IT Support & Infrastructure Professional",
   focus: "IT Support • Troubleshooting • Networking",
+  education: {
+    degree: "BS Information Technology",
+    honor: "Cum Laude",
+    school: "Polytechnic University of the Philippines — Santa Maria, Bulacan",
+    shortSchool: "PUP Santa Maria, Bulacan (PUPSMB)",
+    photo: graduationPhoto,
+    alt: "Mark Andrei B. Muyna in graduation attire with cum laude medal",
+  },
   email: "markandreimuyna31@gmail.com",
   phone: "0999 813 6163",
   location: "Santa Maria, Bulacan, Philippines",
