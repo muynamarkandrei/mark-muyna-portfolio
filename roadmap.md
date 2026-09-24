@@ -8,3 +8,13 @@
 - [x] Improve Projects, Skills, and Certifications hierarchy
 - [x] Polish spacing, typography, buttons, cards, and mobile presentation
 - [x] Verify content routes, metadata, typecheck, and desktop/mobile rendering
+
+## Graduate status and recruiter-copy refinement
+
+- [ ] Update Home status, education, and practicum introduction
+- [ ] Refine Experience introduction while preserving verified details
+- [ ] Add concise project labels and preserve accurate contribution wording
+- [ ] Rename and correct the Current Learning section
+- [ ] Confirm consistent troubleshooting case-study structure
+- [ ] Update Resume, Contact, and page metadata copy
+- [ ] Verify links, downloads, desktop/mobile layout, and console output
