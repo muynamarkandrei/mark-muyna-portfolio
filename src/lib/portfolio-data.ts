@@ -48,7 +48,7 @@ export const PLACEHOLDER = "[TO BE PROVIDED]";
 
 export const profile = {
   name: "Mark Andrei B. Muyna",
-  title: "Aspiring IT Support & Infrastructure Professional",
+  title: "Entry-Level IT Support Professional",
   focus: "IT Support • Troubleshooting • Networking",
   education: {
     degree: "BS Information Technology",
@@ -287,12 +287,11 @@ export const skillGroups = [
   },
 ];
 
-export const currentlyBuilding = [
-  "Linux fundamentals",
+export const currentlyLearning = [
   "Networking fundamentals",
-  "Systems administration",
-  "Infrastructure",
-  "Cloud technologies",
+  "Windows and systems administration fundamentals",
+  "IT infrastructure concepts",
+  "Cloud fundamentals",
 ];
 
 export const supportCapabilities = [

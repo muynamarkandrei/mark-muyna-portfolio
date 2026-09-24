@@ -11,7 +11,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Practicum with a corporate MIS technical team"
-          intro="This is where most of my hands-on experience comes from — real units, real users, real deadlines."
+          intro="Hands-on experience supporting real users, workplace devices, applications, and network-connected equipment under the supervision of an MIS technical team."
         />
 
         <Reveal className="mt-10">

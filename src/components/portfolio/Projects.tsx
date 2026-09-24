@@ -30,6 +30,9 @@ export function Projects() {
                 Web-Based E-Commerce Platform for PC Component Sales with AI Assistance and 3D
                 Visualization
               </h3>
+              <p className="mt-2 font-mono text-xs leading-relaxed text-accent">
+                Academic Systems Project | UI/UX, Requirements Analysis, QA Testing &amp; Documentation
+              </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 An academic systems project developed for a small PC-components business. The platform
                 combined standard e-commerce functionality with an AI shopping assistant, automated
@@ -80,7 +83,10 @@ export function Projects() {
 
       <Reveal className="mt-16">
         <h3 className="text-2xl font-semibold">Cisco Packet Tracer home labs</h3>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-2 font-mono text-xs leading-relaxed text-accent">
+          Self-Directed Networking Practice | IPv4, DHCP, LAN &amp; Wireless
+        </p>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           Self-directed labs I build and document on my own time. They're intentionally
           fundamentals-level — the point is to practice topology, addressing, configuration, and
           verification until it sticks.

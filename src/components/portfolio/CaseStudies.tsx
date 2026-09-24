@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { caseStudies, skillGroups, currentlyBuilding } from "@/lib/portfolio-data";
+import { caseStudies, skillGroups, currentlyLearning } from "@/lib/portfolio-data";
 
 export function CaseStudies() {
   const [open, setOpen] = useState<number | null>(0);
@@ -101,9 +101,9 @@ export function Skills() {
       </div>
       <Reveal delay={120} className="mt-6">
         <div className="rounded-lg border border-border bg-surface p-5">
-          <h3 className="text-sm font-semibold tracking-wide uppercase">Currently Building</h3>
+          <h3 className="text-sm font-semibold tracking-wide uppercase">Currently Learning</h3>
           <ul className="mt-3 flex flex-wrap gap-2">
-            {currentlyBuilding.map((item) => (
+            {currentlyLearning.map((item) => (
               <li
                 key={item}
                 className="rounded-md bg-card px-2.5 py-1 font-mono text-[11px] text-muted-foreground"
@@ -113,8 +113,9 @@ export function Skills() {
             ))}
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Foundational knowledge of HTML, CSS, and JavaScript, with hands-on exposure through
-            academic web projects and AI-assisted development workflows.
+            Currently strengthening networking fundamentals through Cisco Packet Tracer labs and
+            continued study. Building broader familiarity with Windows administration, IT
+            infrastructure, and cloud concepts through coursework and certifications.
           </p>
         </div>
       </Reveal>
