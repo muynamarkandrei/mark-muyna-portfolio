@@ -43,6 +43,7 @@ import capstone3d from "@/assets/portfolio/capstone/3d-capstone.png";
 // Profile image
 import professionalHeadshot from "@/assets/portfolio/profile/headshot.png";
 import graduationPhoto from "@/assets/portfolio/profile/mark-graduation.jpg";
+import updatedResume from "@/assets/portfolio/resume/Mark-Andrei-Muyna-Resume.pdf.asset.json";
 
 export const PLACEHOLDER = "[TO BE PROVIDED]";
 
@@ -64,7 +65,7 @@ export const profile = {
   github: "https://github.com/muynamarkandrei",
   linkedin: "https://www.linkedin.com/in/mark-andrei-muyna-4a7381297/",
   labRepo: "https://github.com/muynamarkandrei/cisco-packet-tracer-home-lab",
-  resumeFile: "/resume/Mark-Andrei-Muyna-Resume.pdf",
+  resumeFile: updatedResume.url,
   profileImage: professionalHeadshot,
 };
 
