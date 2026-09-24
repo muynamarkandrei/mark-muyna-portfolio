@@ -6,9 +6,9 @@ import { Projects } from "@/components/portfolio/Projects";
 import { CaseStudies, Skills } from "@/components/portfolio/CaseStudies";
 import { certifications } from "@/lib/portfolio-data";
 
-const title = "Mark Andrei B. Muyna — Early-Career IT Professional";
+const title = "Mark Andrei B. Muyna — Entry-Level IT Support";
 const description =
-  "Portfolio of Mark Andrei B. Muyna: IT support, troubleshooting, and networking experience from a corporate MIS practicum, academic capstone work, and Cisco Packet Tracer home labs.";
+  "Portfolio of BSIT Cum Laude graduate Mark Andrei B. Muyna, featuring a 500-hour IT support practicum, technical projects, and networking labs.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

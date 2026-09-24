@@ -87,12 +87,18 @@ export function Hero() {
             </p>
           </Reveal>
           <Reveal delay={180}>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Recent BSIT cum laude graduate who completed a 500-hour IT support practicum with a
-              corporate MIS technical team, working on computers, printers, applications, and LAN
-              connections for everyday users. I'm continuing to build my networking fundamentals
-              through Cisco Packet Tracer labs and hands-on troubleshooting experience.
-            </p>
+            <div className="mt-6 max-w-xl space-y-3 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Recent BSIT Cum Laude graduate from PUP Santa Maria with hands-on IT support
+                experience from a 500-hour practicum at C&amp;E Publishing, Inc.
+              </p>
+              <p>
+                Assisted with computer and laptop setup, Windows configuration, software
+                installation, hardware troubleshooting, printers, scanners, and basic LAN
+                connectivity. Currently strengthening my networking and infrastructure fundamentals
+                through Cisco Packet Tracer labs and continued hands-on learning.
+              </p>
+            </div>
           </Reveal>
           <Reveal delay={240}>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -311,8 +317,8 @@ export function ResumeSection() {
             One-page resume focused on IT Support
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
-            A one-page resume focused on IT Support, networking, technical support experience, and
-            hands-on projects — formatted to be easy to scan and ATS-friendly.
+            A one-page resume highlighting my IT support practicum, networking fundamentals,
+            technical projects, education, and certifications.
           </p>
         </Reveal>
         <Reveal delay={80}>
@@ -346,9 +352,8 @@ export function Contact() {
           <p className="font-mono text-xs tracking-[0.18em] uppercase opacity-70">Contact</p>
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Let's Connect</h2>
           <p className="mt-4 text-base leading-relaxed opacity-80">
-            I'm looking for entry-level IT support, helpdesk, or infrastructure roles. The fastest
-            way to reach me is email — I'm happy to walk through anything on this site in more
-            detail.
+            I am currently seeking entry-level opportunities in IT Support, Help Desk, Desktop
+            Support, Technical Support, or related infrastructure roles.
           </p>
         </Reveal>
 
